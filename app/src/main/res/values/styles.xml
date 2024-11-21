@@ -1,0 +1,11 @@
+<resources>
+    <!-- Tab text appearance -->
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <!-- Disable all caps for the tab titles -->
+        <item name="textAllCaps">false</item>
+        <!-- Use a custom font for the tab titles -->
+        <item name="android:fontFamily">@font/benne</item>
+        <!-- Set the default color for unselected tab titles -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

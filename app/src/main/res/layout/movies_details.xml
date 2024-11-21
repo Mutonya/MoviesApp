@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <!-- First Image -->
+            <ImageView
+                android:id="@+id/image_one"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                 />
+
+            <!-- Second Image -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="bottom"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+
+                >
+                <ImageView
+                    android:id="@+id/image_two"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/movietitle"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:layout_marginStart="132dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/movieyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/calendarblank"
+                android:drawablePadding="4dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/movieruntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/clock"
+                android:drawablePadding="4dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                />
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/genre"
+                android:drawablePadding="4dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            android:layout_marginTop="16dp"
+            app:tabIndicatorColor="@color/primarycolor"
+            app:tabSelectedTextColor="@color/primarycolor"
+            app:tabTextAppearance="@style/CustomTabTextAppearance"
+            app:tabIndicatorHeight="4dp"
+            app:tabInlineLabel="true" />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

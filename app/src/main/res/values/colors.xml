@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FF006175</color>
+    <color name="boxshadow">#FFE5E5E5</color>
+    <color name="forgortcolor">#FF006175</color>
+    <color name="primarycolor">#014034</color>
+    <color name="secondarycolor">#2D2D2D</color>
+    <color name="textcolor">#2D2D2D </color>
+    <color name="backgroundcolor">#C3CAC9</color>
+    <color name="faintbackground">#E6ECEB</color>
+    <color name="fainttext">#2D2D2DCC</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="buttonback">#4D7971</color>
 </resources>

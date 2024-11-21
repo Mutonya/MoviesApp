@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow"
+        android:scaleX="-1"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/benne"
+        android:text="@string/signin"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arrowback" />
+
+    <!-- Enter Credentials TextView -->
+    <TextView
+        android:id="@+id/enter_credentials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/benne"
+        android:text="@string/entercredentials"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/signin_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/benne"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/enter_credentials"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Email Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emaillayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/primary"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxBackgroundColor="@color/boxshadow"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/email_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/benne"
+        android:text="@string/password"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/emaillayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Password Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/primary"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxBackgroundColor="@color/boxshadow"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/password_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Forgot Password TextView -->
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/benne"
+        android:text="@string/forgortpassword"
+        android:textColor="@color/forgortcolor"
+        app:layout_constraintTop_toBottomOf="@id/passwordlayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="visible"
+        android:padding="16dp"
+        android:elevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/forgot_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_button"/>
+
+    <!-- Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/benne"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/dont_have_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Don't Have Account TextView -->
+    <TextView
+        android:id="@+id/dont_have_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/benne"
+        android:gravity="center_horizontal"
+        android:text="@string/donthaveaccount"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="56dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

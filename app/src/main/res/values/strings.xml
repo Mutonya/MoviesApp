@@ -1,3 +1,58 @@
 <resources>
     <string name="app_name">Movies App</string>
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+    <string name="not_email">Enter a valid Email Address</string>
+    <string name="not_password">Enter a valid Password</string>
+    <string name="empty_field">This field is mandatory</string>
+    <string name="not_confirm_password">Password Mismatch</string>
+    <string name="incorrectcredential">You have entered the incorrect credentilas</string>
+    <string name="userexists">User already exists</string>
+    <string name="usernotfound">User not found!\nTry creating an account first</string>
+    <string name="unkownerror">Unexpected Exception occurred</string>
+    <string name="next">Next</string>
+    <string name="alreadyhaveanaccount">Already have an account? Sign In</string>
+    <string name="skip">Skip</string>
+    <string name="makenewfriend">Make new friends with ease</string>
+    <string name="allowimg">Allowing you to make new Friends is our Number one priority.....</string>
+    <string name="express">Express yourself to the world</string>
+    <string name="letsshare">Let your voice be heard on the internet through the OFOFO features on the App without restrictions</string>
+    <string name="continues">Continue</string>
+    <string name="main">main</string>
+    <string name="signin">Sign In</string>
+    <string name="entercredentials">Enter your credentials</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgortpassword">Forgot Password?</string>
+    <string name="login">Log In</string>
+    <string name="donthaveaccount">Do not have an Account? Sign up</string>
+    <string name="createaccount">Create Account</string>
+    <string name="personalinfo">Personal Information</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="login_success">Login Successfuly</string>
+    <string name="registrationsuccesfully">User Registered Successfuly</string>
+    <string name="timeout">Request TImed Out</string>
+    <string name="unkwonnhost">Invalid API key: You must be granted a valid key.</string>
+    <string name="apilimit">API key: This key is restricted from performing the requested action.</string>
+    <string name="servererror">Internal server error. Please try again later.</string>
+    <string name="serializationerror">Unexpected Object found</string>
+    <string name="invalidquery">Invalid parameters. Please check your query.</string>
+    <string name="errornotfound">The resource you requested could not be found.</string>
+    <string name="whatdoyouwant">What do you want to watch?</string>
+    <string name="searchbar_hint">Search ...</string>
+    <string name="search">Search</string>
+    <string name="title_home">Home</string>
+    <string name="searchs">Search</string>
+    <string name="bookmark">Wish List</string>
+    <string name="detail">Detail</string>
 </resources>
